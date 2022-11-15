@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Complete Responsive Portfolio Website</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="container">
+      <div class ="navigation">
+    <ul>
+        <li><a href="#banner">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#Services">Services</a></li>
+        <li><a href="#">Projects</a></li>
+        <li><a href="#">Testimonialso</a></li>
+        <li><a href="#">content</a></li>
+    </ul>
+    </div>
+    <div class="main">
+    <div class="topbar">
+        <a href="#"class="logo">Portfolio</a>
+        <div class="toggle">
+            <i class="fa fa-bars" aria-hidden="true"></i>
+        </div>
+    </div>
+<!--banner-->
+    <section class="banner" id="banner">
+        <div class="title"></div>
+        <div class="content">
+            <div class="imgBx">
+               <img src="Images/user.jpg">
+            </div>
+            <h3>Balaji</h3>
+            <p>I'm a Creative Front End Web Developer.</p>
+            <a href="Resume 1.html" class="btn">Download My CV</a>
+            <ul class="socialMedia">
+            <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+            <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+            <li><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+            <li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+        </ul>
+        </div>
+      </section>
+
+    <!-- About -->
+    <section class="about adjust" id="about">
+        <div class="title">
+            <h2>About Me</h2>
+            </div>
+        <div class="content">
+        <div class="textbox">
+        <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam officia numquam sequi, est molestiae voluptatum nihil beatae, culpa incidunt quia eaque dolorum facilis, nam asperiores doloremque ex sapiente? Quae esse repellendus nam necessitatibus amet aspernatur, distinctio tempore qui repudiandae sunt aliquam fuga magnam enim dolorem totam. Veritatis eius exercitationem natus dolorem deserunt quas, quis aut dicta ullam? Ratione id dignissimos beatae, rem vel pariatur aut tempore, molestiae accusantium culpa tenetur qui veritatis fuga quia dolore minima quas. Natus neque ipsum ab, magnam officia impedit velit dolores soluta quis minima! Fugiat debitis dolore culpa! Voluptates, animi? Nisi repellendus beatae cum non tenetur, culpa labore eveniet modi corporis nesciunt rem! Suscipit ad maxime, saepe tempore deleniti dolorum doloribus blanditiis eius modi libero nobis placeat, harum provident nulla quisquam.  laborum facilis nemo. <br><br> Soluta in corrupti minima saepe praesentium cum error dolor pariatur dolorum necessitatibus facere ab recusandae magnam odit voluptatibus maiores fugiat modi eveniet, explicabo, distinctio sit sapiente?.</p>
+        </div>
+        <div class="imgBx">
+                <img src="Images/bg1.jpg">
+        </div>
+        </div>
+        </div>
+    </section>
+    <!--Services-->
+    <section class="services adjust" id="services">
+        <div class="title">
+          <h2>Our Services</h2>
+          <p>lorem</p>
+        </div>
+    </section>
+        </div>
+        </div>
+    <script>
+    let toggle = document.querySelector('.toggle');
+    let topbar = document.querySelector('.topbar');
+    let navigation = document.querySelector('.navigation');
+    let main = document.querySelector('.main');
+    toggle.onclick = function(){
+        toggle.classList.toggle('active');
+        topbar.classList.toggle('active');
+        navigation.classList.toggle('active');
+        main.classList.toggle('active');
+    }
+</script>
+
+</body>
+</html>
