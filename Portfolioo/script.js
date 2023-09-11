@@ -36,15 +36,43 @@ darkmode.onclick = () => {
     
   }
 };
+//resume 
+const handleDownload = () => {
+  const resume = 'Resume.pdf'
+  const pdfUrl = resume;
 
+  const anchor = document.createElement('a');
+  anchor.href = pdfUrl;
+  anchor.target = '_blank';
+  anchor.download = 'your-pdf-file.pdf';
+  anchor.click();
+  window.open(pdfUrl, '_blank');
+};
 // multiple typed js
 
 const typed = new Typed('.multiple-text', {
-  strings: ['Frontend Developer','Student', 'Full Stack Developer','Coder','Programmer','Keen Learner'],
+  strings: [' Frontend Developer.',' Student.', ' Full Stack Developer.',' Coder.',' Programmer.',' Keen Learner.'],
   typeSpeed: 100,
   backSpeed:100,
   backDelay:1000,
-  loop:true
+  loop:true,
 });
+/////////////Professional Skils ///////////////
+const circles = document.querySelectorAll('.circle');
+circles.forEach(elem => {
+  var dots = elem.getAttribute("data-dots");
+  var marked = elem.getAttribute("data-percent");
+  var percent = Math.floor(dots * marked / 100);
+  var points = "";
+  var rotate = 360 / dots;
+  for (let i = 0; i < dots; i++) {
+    points += `<div class="points" style="--i:${i}; --rot:${rotate}deg"></div>`;
+  }
+  elem.innerHTML = points;
 
+  const pointsMarked = elem.querySelectorAll('.points');
+  for (let i = 0; i < percent; i++){
+    pointsMarked[i].classList.add('marked')
+  }
+})
 

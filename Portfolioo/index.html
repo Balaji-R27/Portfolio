@@ -13,7 +13,7 @@
 </head>
 <div class="shapes"></div>
 <body>
-    <div id="page">
+    <!-- <div id="page">
         <div id="container">
             <div id="ring"></div>
             <div id="ring"></div>
@@ -21,7 +21,7 @@
             <div id="ring"></div>
             <div id="h3">loading</div>
         </div>
-</div>
+    </div> -->
 <!-- Navbar  Section Start -->
     <header>
         <a href="#" class="logo">Portfolio.</a>
@@ -66,12 +66,16 @@
             <span>Introduction</span>
         </div>
 
-        <div class="about-container">
+        <div class="container about-container">
+            <div class="left">
                 <div class="about-img">
-                    <img src="img/aboutt.png" alt="">
+                    <img src="img/about.png" alt="">
                 </div>
+            </div>
+            <div class="right">
                 <div class="AboutTextContainer">
                     <div class="about-text">
+                        <h3>I'm <span>Balaji</span> a Developer & Designer </h3>
                     <p>                        
                         I am a passionate web developer. I am skilled in all aspects of web development, from front-end development to 
                          back-end development (PHP, MySQL). I am also proficient in a variety of frameworks and technologies, 
@@ -83,22 +87,79 @@
                     <div class="information">
                         <div class="info-box">
                             <i class='bx bxs-user'></i>
-                            <span>Name</span>
+                            <span>Name : R Balaji</span>
                         </div>
 
                         <div class="info-box">
                             <i class='bx bxs-phone'></i>
-                            <span>+91 444 444 4444</span>
+                            <span>Contact : +91 7845880628</span>
                         </div>
 
                         <div class="info-box">
                         <i class='bx bxs-envelope'></i>
-                        <span>abc@gmail.com</span>
+                        <span>Mail Id :BalajiiR27@gmail.com</span>
                         </div>
                     </div>
-                    <a href="#" class="btn">Download Resume</a>
+                    <a href="#" onclick={handleDownload()} class="btn">Download Resume</a>
+                        <div class="Containerr">
+                            <div class="prograss-bar">
+                                <div class="outer-circle">
+                                    <div class="inner-circle">
+                                        <div class="html-number number">
+                                            <h4>Javascript</h4>
+                                        </div>
+                                    </div>
+                                </div>
+                                <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="160px" height="160px">
+                                    <defs>
+                                        <linearGradient id="GradientColor">
+                                            <stop offset="0%" stop-color="#9b2fff" />
+                                            <stop offset="100%" stop-color="#ff2f48" />
+                                        </linearGradient>
+                                    </defs>
+                                    <circle cx="80" cy="80" r="70" stroke-linecap="round" />
+                                </svg>
+                            </div>
+                            <div class="prograss-bar">
+                                <div class="outer-circle">
+                                    <div class="inner-circle">
+                                        <div class="html-number number">
+                                            <h4>Bootstarp</h4>
+                                        </div>
+                                    </div>
+                                </div>
+                                <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="160px" height="160px">
+                                    <defs>
+                                        <linearGradient id="GradientColor">
+                                            <stop offset="0%" stop-color="#9b2fff" />
+                                            <stop offset="100%" stop-color="#ff2f48" />
+                                        </linearGradient>
+                                    </defs>
+                                    <circle cx="80" cy="80" r="70" stroke-linecap="round" />
+                                </svg>
+                            </div>
+                            <div class="prograss-bar">
+                                <div class="outer-circle">
+                                    <div class="inner-circle">
+                                        <div class="html-number number">
+                                            <h4>React js</h4>
+                                        </div>
+                                    </div>
+                                </div>
+                                <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="160px" height="160px">
+                                    <defs>
+                                        <linearGradient id="GradientColor">
+                                            <stop offset="0%" stop-color="#9b2fff" />
+                                            <stop offset="100%" stop-color="#ff2f48" />
+                                        </linearGradient>
+                                    </defs>
+                                    <circle cx="80" cy="80" r="70" stroke-linecap="round" />
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                </div>
+            </div>    
         </div>
     </section>
     <!-- About Section End -->
@@ -108,12 +169,14 @@
     <section class="skills" id="skills">
         <div class="heading">
             <h2>Skills</h2>
-            <span>My Technical Level</span>
+            <span>My Technical Level and Professional</span>
         </div>
 
         <div class="skills-container">
-            <div class="bars">
-
+            <div class="skill-left">
+                <h3>Technical Skills</h3>
+                <div class="bars">
+                </div>
                 <div class="bars-box">
                     <h3>HTML</h3>
                     <span>94%</span>
@@ -143,7 +206,40 @@
                 </div>
             </div>
             <div class="skills-img">
-                <img src="main.png" alt="Skill">
+                <img src="img/skills.png" alt="Skill">
+            </div>
+            <div class="skill-right">
+                <h3>Professional Skillls</h3>  
+                <div class="professional">
+                    <box class="box">
+                        <div class="circle" data-dots="80" data-percent="90"></div>
+                        <div class="text">
+                            <big>90%</big>
+                            <small>Team Work</small>
+                        </div>
+                    </box>
+                    <box class="box">
+                        <div class="circle" data-dots="40" data-percent="80"></div>
+                        <div class="text">
+                            <big>80%</big>
+                            <small>Creativity</small>
+                        </div>
+                    </box>
+                    <box class="box">
+                        <div class="circle" data-dots="40" data-percent="60"></div>
+                        <div class="text">
+                            <big>60%</big>
+                            <small>Project Manager</small>
+                        </div>
+                    </box>
+                    <box class="box">
+                        <div class="circle" data-dots="80" data-percent="70"></div>
+                        <div class="text">
+                            <big>70%</big>
+                            <small>communication</small>
+                        </div>
+                    </box>
+                </div>
             </div>
         </div>
     </section>
