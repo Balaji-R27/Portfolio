@@ -550,9 +550,9 @@ span {
      animation-delay: calc(var(--i)*0.05s);
 
 }
-/* ----------------------Service Section----------------------------------------------- */
+/* ----------------------Project Section----------------------------------------------- */
 
-.services-content {
+.project-content {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, auto));
     justify-content: center;
@@ -560,7 +560,7 @@ span {
     margin-top: 2rem;
 }
 
-.services-box {
+.project-box {
     padding: 20px;
     width: 260px;
     display: flex;
@@ -574,38 +574,38 @@ span {
     transition: all ease-in-out 0.3s;
 }
 
-.services-box:hover {
+.project-box:hover {
     background-color: #02225a;
     transform: scale(1.2);
 }
 
-.services-box h3 {
+.project-box h3 {
     font-size: 1rem;
     font-weight: 600;
     margin: 0.7rem 0 0.4rem;
 }
 
-.services-box:hover h3 {
+.project-box:hover h3 {
     color: #fff;
 }
 
-.services-box .bx {
+.project-box .bx {
     padding-top: 2rem;
     font-size: 54px;
     color: var(--main-color);
 }
 
-.services-box:hover .bx {
+.project-box:hover .bx {
     color: #22cf91;
 }
 
-.services-box a {
+.project-box a {
     color: var(--main-color);
     font-size: var(--p-font);
     font-weight: 500;
 }
 
-.services-box:hover a {
+.project-box:hover a {
     color: #8b8a8f;
 }
 /* ----------------------Contact Section----------------------------------------------- */
@@ -886,4 +886,15 @@ form textarea {
     .contact-button {
         margin-left: 25%;
     }
+}
+/* -------custom scrollbar---------- */
+::-webkit-scrollbar{
+    width: 10px;
+}
+::-webkit-scrollbar-track{
+    background: #d1e5ff;
+}
+::-webkit-scrollbar-thumb{
+    background: linear-gradient(#642bff, #ff22e6);
+    border-radius: 10px;
 }
